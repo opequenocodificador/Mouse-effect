@@ -4,10 +4,12 @@
 }
 * {
   margin: 0;
-  padding: 5px;
+  padding: 0px;
   font-family: "font-1", Arial;
   box-sizing: border-box;
 }
+
+
 li {
   list-style: none;
 }
@@ -25,6 +27,28 @@ body {
   background: rgb(27, 27, 27);
   color: rgb(246, 246, 246);
   min-height: 100vh;
+  cursor: none;
+}
+
+.cursor{
+  width: 40px;
+  height: 40px;
+  cursor: none;
+  border: 1px dashed white;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.cursor::before{
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 5px;
+  height: 5px;
+  background: red;
+  border-radius: 50%;
 }
 nav {
   display: grid;
@@ -141,3 +165,6 @@ footer img {
     align-items: center;
   }
 }
+
+/*******Javascrpit*****/
+

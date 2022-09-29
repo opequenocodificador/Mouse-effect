@@ -5,3 +5,12 @@
 // S'assurer que les liens sont clickables
 
 // Donner un style de transparence aux 2 plus gros ronds (mix-blend-mode)
+
+const cursor = document.querySelector(".cursor");
+
+window.addEventListener("mousemove", (e) => {
+  cursor.setAttribute(
+    "style",
+    "top:" + (e.pageY - 20) + "px;left:" + (e.pageX - 20) + "px;"
+  );
+});
