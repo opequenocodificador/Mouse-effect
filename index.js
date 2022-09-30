@@ -10,6 +10,10 @@ const circle1 = document.querySelector(".circle1");
 
 const circle2 = document.querySelector(".circle2");
 
+const cursor = document.querySelector(".cursor");
+
+const nav = document.querySelector("nav");
+
 window.addEventListener("mousemove", (e) => {
   circle1.style.left = e.pageX + "px";
   circle1.style.top = e.pageY + "px";
@@ -18,4 +22,14 @@ window.addEventListener("mousemove", (e) => {
 window.addEventListener("mousemove", (e) => {
   circle2.style.left = e.pageX + "px";
   circle2.style.top = e.pageY + "px";
+});
+
+window.addEventListener("mousemove", (e) => {
+  cursor.style.left = e.pageX + "px";
+  cursor.style.top = e.pageY + "px";
+});
+
+cursor.addEventListener("click", (e) => {
+  cursor.style.border = "6px solid teal";
+  cursor.style.background = "yellow";
 });

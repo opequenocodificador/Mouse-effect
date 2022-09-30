@@ -8,7 +8,7 @@
   padding: 0px;
   font-family: "font-1", Arial;
   box-sizing: border-box;
-  /*cursor: none;*/
+  cursor: none;
 }
 
 li {
@@ -33,72 +33,57 @@ body {
   min-height: 100vh;
 }
 
-.circle1{
-  height: 100px;
-  width: 100px;
-  border: 2px solid rgb(246, 246, 246);
-  background: rgb(246, 246, 246);
-  position: absolute;
-  transform: translate(-50%, -50%);
-  border-radius: 100px;
-  transition: 0.2s ease;
-  opacity: 0.2;
-mix-blend-mode: difference;
-
-}
-
-/*.circle1::before {
-  content: "";
+.cursor {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 10px;
   height: 10px;
-  background: red;
+  background: whitesmoke;
   border-radius: 50%;
-}*/
+}
 
-
+.circle1 {
+  height: 100px;
+  width: 100px;
+  border: 2px solid rgb(246, 246, 246);
+  background: rgb(246, 246, 246);
+  position: absolute;
+  top: 60%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  border-radius: 100px;
+  transition: 0.4s ease;
+  opacity: 0.9;
+  mix-blend-mode: difference;
+}
 
 .circle2 {
   height: 200px;
   width: 200px;
-  border: 2px solid grey;
-  background: transparent;
+  border: 2px solid #474dff;
+  background: #474dff;
   position: absolute;
   transform: translate(-50%, -50%);
   border-radius: 200px;
   transition: 0.2s ease;
   opacity: 0.8;
-
+  mix-blend-mode: difference;
 }
 
-/*.expand {
- animation: anim2 .5s;
-  background: crimson;
-  border: 1px solid crimson;
+.cursor-click {
+  color: yellow;
+  border: 40px solid dashed;
+  border-radius: 30px;
+  background: yellow;
 }
-
-@keyframes anim2 {
-  0% {
-    transform: scale(1);
-  }
-
-  50% {
-    transform: scale(2);
-  }
-
-  100% {
-    transform: scale(1);
-    opacity: 0;
-  }
-}*/
 
 nav {
   display: grid;
   grid-template-columns: 50% 50%;
   margin: 10px 20px;
+  margin-top: 100px;
   height: 50px;
 }
 
